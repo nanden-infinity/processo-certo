@@ -10,6 +10,9 @@ module.exports = {
       screens:{
         lg: "1200px",
         md: "768px"
+      },
+      backgroundImage:{
+        "hero": "url('/assets/images/banner.jpg')"
       }
     },
   },

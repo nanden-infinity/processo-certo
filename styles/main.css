@@ -54,3 +54,12 @@
     transition: 0.3s ease-in;
   }
 }
+
+@media(max-width: 885px){
+  header{
+    padding: 4px !important;
+  }
+  nav ul{
+   margin: 0 5px !important;
+  }
+}

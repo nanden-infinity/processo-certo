@@ -6,10 +6,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="images/icons/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="images/icons/favicon-96x96.png" />
-<link rel="shortcut icon" href="images/icons/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="assets/images/icons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="assets/images/icons/favicon-96x96.png" />
+<link rel="shortcut icon" href="assets/images/icons/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="Processo Certo" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#2E75FA">
@@ -19,11 +19,11 @@
 </head>
 <body>
  <div class="container-body">
-  <header class="bg-white/95 h-[88px]  shadow-xl font-mono text-slate-900/80">
-    <div class="container--header flex items-center justify-between f w-full space-x-20  mx-auto h-[88px] py-8 px-[4%]">
-      <div class="logo"><a href="#"><img src="images/logo.png" height="70px" width="70px" alt="logo"></a></div>
+  <header class="bg-white/95   shadow-xl font-mono text-slate-900/80 pb-4 ">
+    <div class="container--header flex items-center justify-between f w-full space-x-20 pb-4  mx-auto h-[88px] pt-6 px-12">
+      <div class="logo"><a href="#"><img src="assets/images/logo.svg" height="80px" width="120px" alt="logo"></a></div>
       <nav class="flex items-center text-2xl justify-end flex-1">
-        <ul class="flex items-center space-x-12 flex-wrap ">
+        <ul class="flex items-center space-x-12 flex-wrap justify-end  w-full  text-xl  ">
           <li><a href="#servicos" class="hover:text-sky-600 duration-300">Serviços</a></li>
           <li><a href="#processo" class="hover:text-sky-600 duration-300">Processos</a></li>
           <li><a href="#faq" class="hover:text-sky-600 duration-300">Faq</a></li>
@@ -33,22 +33,55 @@
 
       <div class="div-fale_connosco">
         <button data-menu_mobile="hamburger-menu" class="hidden">Menu <span></span></span></button>
-        <button class="button-fale_connosco bg-sky-500 inline-block p-3 px-6 rounded text-white text-xl">Fale Connosco</button>
+        <button class="button-fale_connosco bg-sky-500 inline-block hover:bg-sky-600 p-3 px-6 rounded text-white text-xl">Fale Connosco</button>
       </div>
     </div>
   </header>
-  <section>
-   <div class="container-hero">
-    <h1 class="titulo text-3xl font-mono">BUSCE SOLUCÇOES COM OS NOSSOS PROFISSIONAIS</h1>
-    <p>Não se limitse os seus sonhos</p>
-    <div class="buttons">
-      <a href="#" class="bg-sky-500 font-semibold inline-block p-3 border-2 border-transparent px-6 rounded text-white text-xl">Fale Connosco</a>
-      <a href="#" class="inline-block font-semibold bg-slate-100/10 p-3 px-6 rounded text-sky-500 text-xl border-2 border-sky-500">Saiba mais</a>
+  <section class="bg-sky-700/30 bg-hero bg-no-repeat bg-cover py-32 bg-blend-hard-light bg-right-top relative">
+   <div class="container-hero py-8 px-32">
+    <span class="bg-sky-500 p-2 px-4 text-white text-xl rounded-full mb-12 inline-block absolute top-4">Soluções Documentais Profissionais</span>
+    <h1 class="titulo text-6xl font-mono font-bold max-w-5xl leading-[1.1] text-white my-4">BUSQUE SOLUCÇOES COM OS NOSSOS PROFISSIONAIS</h1>
+    <p class="text-2xl font-serif font-semibold text-white">Não se limite nos teus sonhos</p>
+    <div class="buttons flex space-x-8 mt-8">
+      <a href="#" class="bg-sky-500 font-semibold font-serif inline-block p-3 border-2 border-transparent px-6 rounded text-white text-xl hover:bg-sky-600">Fale Connosco</a>
+      <a href="#" class="inline-block font-semibold bg-white p-3 px-6 rounded text-gray-900 font-serif text-xl border-2 border-yellow-50/10">Saiba mais</a>
     </div>
    </div>
   </section>
+<section class="search-section bg-sky-50/40">
+  <div class="container-searc flex justify-end items-center px-12 mx-auto py-4">
+    <div class="search-box flex py-2 px-4 pr-[40px] mr-[20px] border-2 border-sky-300 rounded relative">
+      <input type="text" placeholder="o que procuras ?" class="h-[38px] px-4  focus:outline-none outline-none">
+      <span class="absolute  right-4 top-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>
+    </div>
+  </div>
+</section>
+<section class="section-grid mt-14">
+  <div class="container mx-auto">
+    <div class="container-grid grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-4">
+    
+      <figure class="bg-sky-50/40 p-4 flex flex-col ">
+        <img src="assets/images/studos.jpg" alt="" class="w-full">
+        <figcaption class="text-2xl font-serif mt-12 bg-sky-400 text-white p-2 rounded">Estudos</figcaption>
+      </figure>
+      <figure class="bg-sky-50/40 p-4 flex flex-col">
+        <img src="assets/images/procuraTrabalhojpg.jpg" alt="" class="w-full">
+        <figcaption class="text-2xl font-serif mt-6 bg-orange-600 text-white p-2 rounded">Procura de Trabalho</figcaption>
+      </figure>
 
+      <figure class="bg-sky-50/40 p-4 flex flex-col ">
+        <img src="assets/images/turismo.jpg" alt="" class="w-full">
+        <figcaption class="text-2xl font-serif mt-12 bg-pink-400 text-white p-2 rounded">Turismo</figcaption>
+      </figure>
 
+  
+      <figure class="bg-sky-50/40 p-4 flex flex-col">
+        <img src="assets/images/tratamentomedico.jpg" alt="" class="w-full">
+        <figcaption class="text-2xl font-serif  mt-6  bg-green-600 text-white p-2 rounded">Tratamento Médico</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
 
  </div>
 
