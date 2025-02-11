@@ -6,15 +6,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/output.css">
-  <link rel="icon" type="image/png" href="images/icons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="images/icons/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="images/icons/favicon-96x96.png" />
 <link rel="shortcut icon" href="images/icons/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png" />
 <meta name="apple-mobile-web-app-title" content="Processo Certo" />
 <link rel="manifest" href="/site.webmanifest" />
 <meta name="theme-color" content="#2E75FA">
+<link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/output.css">
   <title>Processo Certo</title>
 </head>
 <body>
@@ -25,17 +25,29 @@
       <nav class="flex items-center text-2xl justify-end flex-1">
         <ul class="flex items-center space-x-12 flex-wrap ">
           <li><a href="#servicos" class="hover:text-sky-600 duration-300">Serviços</a></li>
-          <li><a href="#servicos" class="hover:text-sky-600 duration-300">Processos</a></li>
-          <li><a href="#servicos" class="hover:text-sky-600 duration-300">Faq</a></li>
-          <li><a href="#servicos" class="hover:text-sky-600 duration-300">Sobre nós</a></li>
+          <li><a href="#processo" class="hover:text-sky-600 duration-300">Processos</a></li>
+          <li><a href="#faq" class="hover:text-sky-600 duration-300">Faq</a></li>
+          <li><a href="#sobre-nos" class="hover:text-sky-600 duration-300">Sobre nós</a></li>
         </ul>
       </nav>
 
-      <div class="button">
-        <button class="bg-sky-500 p-3 px-6 rounded text-white text-xl">Fale Connosco</button>
+      <div class="div-fale_connosco">
+        <button data-menu_mobile="hamburger-menu" class="hidden">Menu <span></span></span></button>
+        <button class="button-fale_connosco bg-sky-500 inline-block p-3 px-6 rounded text-white text-xl">Fale Connosco</button>
       </div>
     </div>
   </header>
+  <section>
+   <div class="container-hero">
+    <h1 class="titulo text-3xl font-mono">BUSCE SOLUCÇOES COM OS NOSSOS PROFISSIONAIS</h1>
+    <p>Não se limitse os seus sonhos</p>
+    <div class="buttons">
+      <a href="#" class="bg-sky-500 font-semibold inline-block p-3 border-2 border-transparent px-6 rounded text-white text-xl">Fale Connosco</a>
+      <a href="#" class="inline-block font-semibold bg-slate-100/10 p-3 px-6 rounded text-sky-500 text-xl border-2 border-sky-500">Saiba mais</a>
+    </div>
+   </div>
+  </section>
+
 
 
  </div>
